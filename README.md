@@ -4,8 +4,8 @@ Welcome to Star Code Projects (مهام منصة سطر). Here are the projects 
 # Project_Python_101  👨🏽‍💻
 Phone_Book
 
-- This is the task on Course Python 101 on star.code.
-![1](./Python_101_Phone_Book/Phone Book.PNG?raw=true "Phone Book")
+ - This is the task on Course Python 101 on star.code.
+![1](./Python_101_Phone_Book/Phone_Book.PNG?raw=true "Phone_Book")
 
 ![2](./Python_101_Phone_Book/1.PNG?raw=true "1")
 

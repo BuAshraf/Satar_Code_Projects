@@ -1,6 +1,39 @@
 ## Star_Code_Projects  👨🏽‍💻
 Welcome to Star Code Projects (مهام منصة سطر). Here are the projects I made in satr.codes.com courses.
 
+
+## License
+
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+
+## 🏅 Badges
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="./Python_101_Phone_Book/badges-45_Python101.png" alt="Python101 Completed" width="100"/><br/>
+       Python 101  إتمام 🏁
+    </td>
+    <td align="center">
+      <img src="./GitHub.png" alt="GitHub Badge" width="100"/><br/>
+      GitHub  وسام 🥇
+    </td>
+    <td align="center">
+      <img src="./SQL101Project/badges-49_SQL101.png" alt="SQL101 Completed" width="100"/><br/>
+       SQL 101  إتمام 🏁
+    </td>
+  </tr>
+</table>
+
+</div>
+
+
+
+
+
+<hr>
+<hr>
+
 # Project_Python_101  👨🏽‍💻
 📞 Phone Book
 

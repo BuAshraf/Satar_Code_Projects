@@ -49,6 +49,10 @@ UPDATE students SET Student_email = 'updated_email@tamayoz.edu' WHERE id = 1;
 RENAME TABLE teachers TO instructors
 ```
 
+- This is the is the certificate you will get after you finish the course. 
+![6](./SQL101Project/SQL101.png?raw=true "SQL101")
+
+
 ## Get to Know Me  😁
 
 - 🌐 **Website:**  I will add it in the future 😅

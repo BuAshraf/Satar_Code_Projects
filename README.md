@@ -22,6 +22,10 @@ Welcome to Star Code Projects (مهام منصة سطر). Here are the projects 
       <img src="./SQL101Project/badges-49_SQL101.png" alt="SQL101 Completed" width="100"/><br/>
        SQL 101  إتمام 🏁
     </td>
+    <td align="center">
+      <img src="./SQL102Project/badges-49_اتمام SQL 102.png" alt="SQL102 Completed" width="100"/><br/>
+       SQL 102  إتمام 🏁
+    </td>
   </tr>
 </table>
 
@@ -84,7 +88,91 @@ RENAME TABLE teachers TO instructors
 
 - This is the is the certificate you will get after you finish the course. 
 ![6](./SQL101Project/SQL101.png?raw=true "SQL101")
+## 🛢️ Project_SQL_102  
+### 📚 Tamayoz School Database – Advanced SQL  
 
+This project was completed as part of the **SQL 102** course on [Satr.codes](https://satr.codes), where I built on the original schema with advanced queries, functions, and data transformations.
+
+### 🔍 Key Highlights:
+- **Derived Tables:**  
+  - `top_students` (GPA > 90)  
+  - `failing_students` (GPA < 60)  
+- **Filtering & Search:**  
+  - Names starting with `A` (LIKE)  
+  - Names of length 4 (CHAR_LENGTH)  
+- **Aggregate Analytics:**  
+  - `AVG`, `MAX`, `MIN` on GPA  
+- **Special Cases:**  
+  - Level 6 students with GPA = 100  
+  - Level 1 students aged 15–16 (TIMESTAMPDIFF)  
+  - Count of level 2 students  
+- **Distinct & Formatting:**  
+  - `DISTINCT Major`  
+  - `UPPER(Subject_name)`  
+- **Functions & Updates:**  
+  - `FLOOR(AVG(GPA))`  
+  - `REPLACE` to map `M`→`Male`, `F`→`Female`  
+  - Increase GPA by 5 for all GPA < 60  
+
+### 💻 Example Queries:
+
+```sql
+-- 1. Create derived tables
+CREATE TABLE top_students     AS SELECT * FROM students WHERE GPA > 90;
+CREATE TABLE failing_students AS SELECT * FROM students WHERE GPA < 60;
+
+-- 2. Search & filter
+SELECT Student_name
+FROM students
+WHERE Student_name LIKE 'A%';
+
+SELECT Student_name
+FROM students
+WHERE CHAR_LENGTH(Student_name) = 4;
+
+-- 3. Aggregate functions
+SELECT 
+  AVG(GPA) AS average_gpa, 
+  MAX(GPA) AS highest_gpa, 
+  MIN(GPA) AS lowest_gpa
+FROM students;
+
+-- 4. Special-case queries
+SELECT Student_name
+FROM students
+WHERE Academic_level = 6
+  AND GPA = 100;
+
+SELECT *
+FROM students
+WHERE Academic_level = 1
+  AND TIMESTAMPDIFF(YEAR, Student_dob, CURDATE()) BETWEEN 15 AND 16;
+
+SELECT COUNT(*) AS level_2_count
+FROM students
+WHERE Academic_level = 2;
+
+-- 5. Distinct & uppercase
+SELECT DISTINCT Major
+FROM students;
+
+SELECT UPPER(Subject_name) AS Subject_name
+FROM subjects;
+
+-- 6. Numeric & string updates
+SELECT FLOOR(AVG(GPA)) AS floored_avg_gpa
+FROM students;
+
+UPDATE students
+SET Gender = REPLACE(REPLACE(Gender, 'M', 'Male'), 'F', 'Female');
+
+UPDATE students
+SET GPA = GPA + 5
+WHERE GPA < 60;
+```
+
+- This is the is the certificate you will get after you finish the course. 
+![6](./SQL102Project/SQL102.png?raw=true "SQL102")
 
 ## Get to Know Me  😁
 

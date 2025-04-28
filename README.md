@@ -1,5 +1,5 @@
 ## Star_Code_Projects  👨🏽‍💻
-Welcome to Star Code Projects (مهام منصة سطر). Here are the projects I made in satr.codes.com courses.
+Welcome to Star Code Projects (مهام منصة سطر). Here are the projects I made in [Satr.codes](https://profile.satr.codes/buashraf/public/overview) courses.
 
 
 ## License

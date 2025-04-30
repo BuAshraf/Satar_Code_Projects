@@ -55,6 +55,7 @@ Welcome to Star Code Projects (مهام منصة سطر). Here are the projects 
 - This is the is the certificate you will get after you finish the course. 
 ![5](./Python_101_Phone_Book/certificate_Python101.png?raw=true "certificate_Python101")
 
+_____________________________________________________________________________________________________
 ## 🛢️ Project_SQL_101  
 ### 📚 Tamayoz School Database  
 
@@ -88,6 +89,7 @@ RENAME TABLE teachers TO instructors
 
 - This is the is the certificate you will get after you finish the course. 
 ![6](./SQL101Project/SQL101.png?raw=true "SQL101")
+_____________________________________________________________________________________________________
 ## 🛢️ Project_SQL_102  
 ### 📚 Tamayoz School Database – Advanced SQL  
 
@@ -173,6 +175,51 @@ WHERE GPA < 60;
 
 - This is the is the certificate you will get after you finish the course. 
 ![6](./SQL102Project/SQL102.png?raw=true "SQL102")
+_____________________________________________________________________________________________________
+## 🛢️ Course_SQL_103  
+### 📚 Tamayoz School Database – Relational Design & Advanced Queries  
+
+This course was completed as part of the **SQL 103** series on [Satr.codes](https://satr.codes), where I deepened my understanding of relational integrity, joining strategies, views, indexes, and procedural logic, culminating in two comprehensive projects.
+
+### 🔍 Key Content
+
+1. **Foreign Keys**  
+   - Introduction to the concept of a FOREIGN KEY  
+   - Adding a FOREIGN KEY after table creation  
+   - [Quiz: 3 questions]
+
+2. **Relations**  
+   - Understanding table relationships  
+   - One-to-One, One-to-Many, Many-to-Many  
+   - [Quiz: 3 questions]
+
+3. **JOINS**  
+   - INNER JOIN, LEFT OUTER JOIN, RIGHT OUTER JOIN  
+   - CROSS JOIN, NATURAL JOIN  
+   - [Quiz: 3 questions]
+
+4. **Views**  
+   - Creating a VIEW  
+   - Dropping a VIEW  
+   - [Quiz: 3 questions]
+
+5. **Indexes**  
+   - Creating, listing and dropping INDEXES  
+   - [Quiz: 3 questions]
+
+6. **Procedures**  
+   - Creating a stored PROCEDURE  
+   - Invoking a PROCEDURE  
+   - [Quiz: 3 questions]
+
+7. **Mini Project**  
+   - Apply all concepts from this course in a hands-on exercise  
+
+8. **Final Capstone**  
+   - Build a unified solution leveraging SQL 1, SQL 2 and SQL 3 skills  
+
+---
+
 
 ## Get to Know Me  😁
 

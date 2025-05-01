@@ -26,6 +26,11 @@ Welcome to Star Code Projects (مهام منصة سطر). Here are the projects 
       <img src="./SQL102Project/badges-49_اتمام SQL 102.png" alt="SQL102 Completed" width="100"/><br/>
        SQL 102  إتمام 🏁
     </td>
+     </td>
+    <td align="center">
+      <img src="./SQL103FP/badges-49_اتمام SQL 103.png" alt="SQL103 Completed" width="100"/><br/>
+       SQL 103  إتمام 🏁
+    </td>
   </tr>
 </table>
 
@@ -174,53 +179,112 @@ WHERE GPA < 60;
 ```
 
 - This is the is the certificate you will get after you finish the course. 
-![6](./SQL102Project/SQL102.png?raw=true "SQL102")
+![7](./SQL102Project/SQL102.png?raw=true "SQL102")
 _____________________________________________________________________________________________________
-## 🛢️ Course_SQL_103  
+## 🛢️ Project_SQL_103  
 ### 📚 Tamayoz School Database – Relational Design & Advanced Queries  
 
-This course was completed as part of the **SQL 103** series on [Satr.codes](https://satr.codes), where I deepened my understanding of relational integrity, joining strategies, views, indexes, and procedural logic, culminating in two comprehensive projects.
+This project was completed as part of the **SQL 103** course on [Satr.codes](https://satr.codes), where I mastered relational integrity, joining strategies, views, indexes, and procedural logic through a mini project and a final capstone.
 
-### 🔍 Key Content
+### 🔍 Key Highlights:
+- **Foreign Keys:**  
+  - Introduction to `FOREIGN KEY`  
+  - Adding a `FOREIGN KEY` after table creation  
+- **Relations:**  
+  - One-to-One, One-to-Many, Many-to-Many relationships  
+- **JOINS:**  
+  - `INNER JOIN`, `LEFT OUTER JOIN`, `RIGHT OUTER JOIN`  
+  - `CROSS JOIN`, `NATURAL JOIN`  
+- **Views:**  
+  - Creating a `VIEW`  
+  - Dropping a `VIEW`  
+- **Indexes:**  
+  - Creating, listing & dropping indexes  
+- **Procedures:**  
+  - Creating stored procedures  
+  - Invoking procedures  
+- **Mini Project:**  
+  - Build relationship tables, procedures, view & index  
+- **Final Capstone:**  
+  - Unified solution leveraging skills from SQL 1, 2 & 3  
 
-1. **Foreign Keys**  
-   - Introduction to the concept of a FOREIGN KEY  
-   - Adding a FOREIGN KEY after table creation  
-   - [Quiz: 3 questions]
+### 💻 Example Queries:
 
-2. **Relations**  
-   - Understanding table relationships  
-   - One-to-One, One-to-Many, Many-to-Many  
-   - [Quiz: 3 questions]
+```sql
+-- 1. Add FK to existing table
+ALTER TABLE Teachers
+  ADD FOREIGN KEY (subject_id) REFERENCES subjects(subject_id);
 
-3. **JOINS**  
-   - INNER JOIN, LEFT OUTER JOIN, RIGHT OUTER JOIN  
-   - CROSS JOIN, NATURAL JOIN  
-   - [Quiz: 3 questions]
+-- 2. Create many-to-many join table
+CREATE TABLE teacher_students (
+  teacher_id INT,
+  student_id INT,
+  PRIMARY KEY (teacher_id, student_id),
+  FOREIGN KEY (teacher_id) REFERENCES teachers(Teacher_id),
+  FOREIGN KEY (student_id) REFERENCES students(Students_id)
+);
 
-4. **Views**  
-   - Creating a VIEW  
-   - Dropping a VIEW  
-   - [Quiz: 3 questions]
+-- 3. Create & call stored procedure
+DELIMITER $$
+CREATE PROCEDURE student_info()
+BEGIN
+  SELECT s.Student_name, sub.Subject_name
+  FROM students s
+  JOIN student_subjects ss ON s.Students_id = ss.student_id
+  JOIN subjects sub      ON ss.subject_id = sub.subject_id;
+END $$
+DELIMITER ;
+CALL student_info();
 
-5. **Indexes**  
-   - Creating, listing and dropping INDEXES  
-   - [Quiz: 3 questions]
+-- 4. Create & drop a view
+CREATE VIEW teacher_info AS
+  SELECT t.Teacher_name, o.Office_number, sub.Subject_name
+  FROM teachers t
+  JOIN Offices o  ON t.Teacher_id = o.Teacher_id
+  JOIN subjects sub ON t.subject_id = sub.subject_id;
+SELECT * FROM teacher_info;
+DROP VIEW teacher_info;
 
-6. **Procedures**  
-   - Creating a stored PROCEDURE  
-   - Invoking a PROCEDURE  
-   - [Quiz: 3 questions]
+-- 5. Create & drop an index
+CREATE INDEX idx_student_name ON students(Student_name);
+SHOW INDEX FROM students;
+DROP INDEX idx_student_name ON students;
+```
+- This is the is the certificate you will get after you finish the course. 
+![8](./SQL103FP/SQL103.png?raw=true "SQL103")
+_____________________________________________________________________________________________________
 
-7. **Mini Project**  
-   - Apply all concepts from this course in a hands-on exercise  
+## 🏁 SQL Final Project – Twitter Clone  
+### 📚 Social Network Simulation  
 
-8. **Final Capstone**  
-   - Build a unified solution leveraging SQL 1, SQL 2 and SQL 3 skills  
+Simulate a Twitter-like platform to manage users, profiles, follows, tweets, and likes.
 
----
-
-
+### 🔍 Key Highlights
+- **Schema & Relationships**  
+  - `Users` ↔ `Profiles` (1:1)  
+  - `Users` ↔ `Tweets` (1:N)  
+  - `Users` ↔ `Users` via `Follows` (M:N)  
+  - `Users` ↔ `Tweets` via `Likes` (M:N)  
+- **ER Diagram**  
+  ![ER Diagram](/SQL_FP/ERD_FP.png)  
+- **Stored Procedures**  
+  - `createAccount(username, email, password, bio)`  
+  - `User_Follow(followerUsername, followeeUsername)`  
+- **Auto-Increment & Constraints**  
+  - `AUTO_INCREMENT` keys  
+  - `UNIQUE` & `FOREIGN KEY` constraints  
+- **Security**  
+  - Passwords hashed with `MD5()` and stored as `BINARY(64)`  
+- **Sample Queries**  
+  ```sql
+  CALL createAccount('alice','alice@ex.com','pass123','Hello!');
+  CALL User_Follow('alice','bob');
+  SELECT COUNT(*) AS tweet_count 
+    FROM Tweets t 
+    JOIN Profiles p ON t.user_id = p.user_id 
+    WHERE p.username = 'alice';
+  ```
+  ___________________________________________________________________
 ## Get to Know Me  😁
 
 - 🌐 **Website:**  I will add it in the future 😅

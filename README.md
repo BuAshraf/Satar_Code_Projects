@@ -1,5 +1,5 @@
-## Star_Code_Projects  👨🏽‍💻
-Welcome to Star Code Projects (مهام منصة سطر). Here are the projects I made in [Satr.codes](https://profile.satr.codes/buashraf/public/overview) courses.
+## Satar_Code_Projects  👨🏽‍💻
+Welcome to satar Code Projects (مهام منصة سطر). Here are the projects I made in [Satar.codes](https://profile.satar.codes/buashraf/public/overview) courses.
 
 
 ## License
@@ -46,7 +46,7 @@ Welcome to Star Code Projects (مهام منصة سطر). Here are the projects 
 # Project_Python_101  👨🏽‍💻
 📞 Phone Book
 
- - This is the task on Course Python 101 on star.code.
+ - This is the task on Course Python 101 on satar.code.
 ![1](./Python_101_Phone_Book/Phone_Book.PNG?raw=true "Phone_Book")
 
 ![2](./Python_101_Phone_Book/1.PNG?raw=true "1")
@@ -64,7 +64,7 @@ ________________________________________________________________________________
 ## 🛢️ Project_SQL_101  
 ### 📚 Tamayoz School Database  
 
-This project was completed as part of the **SQL 101** course on [Satr.codes](https://satr.codes), where I built a structured database for a school named **Tamayoz School**.
+This project was completed as part of the **SQL 101** course on [satar.codes](https://satar.codes), where I built a structured database for a school named **Tamayoz School**.
 
 ### 🔍 Key Highlights:
 - Created 3 main tables: `students`, `teachers`, and `subjects`
@@ -98,14 +98,14 @@ ________________________________________________________________________________
 ## 🛢️ Project_SQL_102  
 ### 📚 Tamayoz School Database – Advanced SQL  
 
-This project was completed as part of the **SQL 102** course on [Satr.codes](https://satr.codes), where I built on the original schema with advanced queries, functions, and data transformations.
+This project was completed as part of the **SQL 102** course on [satar.codes](https://satar.codes), where I built on the original schema with advanced queries, functions, and data transformations.
 
 ### 🔍 Key Highlights:
 - **Derived Tables:**  
   - `top_students` (GPA > 90)  
   - `failing_students` (GPA < 60)  
 - **Filtering & Search:**  
-  - Names starting with `A` (LIKE)  
+  - Names satarting with `A` (LIKE)  
   - Names of length 4 (CHAR_LENGTH)  
 - **Aggregate Analytics:**  
   - `AVG`, `MAX`, `MIN` on GPA  
@@ -184,7 +184,7 @@ ________________________________________________________________________________
 ## 🛢️ Project_SQL_103  
 ### 📚 Tamayoz School Database – Relational Design & Advanced Queries  
 
-This project was completed as part of the **SQL 103** course on [Satr.codes](https://satr.codes), where I mastered relational integrity, joining strategies, views, indexes, and procedural logic through a mini project and a final capstone.
+This project was completed as part of the **SQL 103** course on [satar.codes](https://satar.codes), where I mastered relational integrity, joining strategies, views, indexes, and procedural logic through a mini project and a final capstone.
 
 ### 🔍 Key Highlights:
 - **Foreign Keys:**  
@@ -289,7 +289,7 @@ Simulate a Twitter-like platform to manage users, profiles, follows, tweets, and
 
 - 🌐 **Website:**  I will add it in the future 😅
   
-- 🌐 **Star.Code:** [See my Profile](https://profile.satr.codes/buashraf/public/overview)
+- 🌐 **satar.Code:** [See my Profile](https://profile.satar.codes/buashraf/public/overview)
 
 - 💼 **LinkedIn:** [Connect with me](www.linkedin.com/in/muhammed-alkulaib-773492238)
 
